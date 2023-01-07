@@ -1,27 +1,23 @@
 #!/bin/bash
+ print_banner
+ printf "${WHITE} 💻 Digite o domínio:${GRAY_LIGHT}"
+ printf "\n\n"
+ read -p "> " domain
 
 get_frontend_url() {
-  
   print_banner
-  printf "${WHITE} 💻 Digite o domínio da interface web:${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Digite o domínio:${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " frontend_url
+  frontend_url = "web." + domain
 }
 
 get_backend_url() {
-  
-  print_banner
-  printf "${WHITE} 💻 Digite o domínio da sua API:${GRAY_LIGHT}"
-  printf "\n\n"
-  read -p "> " backend_url
+  backend_url =  "api." + domain
 }
 
 get_admin_frontend_url() {
-
-  print_banner
-  printf "${WHITE} 💻 Digite o domínio da interface web Admin:${GRAY_LIGHT}"
-  printf "\n\n"
-  read -p "> " admin_frontend_url
+   admin_frontend_url =  "admin." + domain
 }
 
 
