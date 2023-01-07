@@ -6,9 +6,6 @@
 
 get_frontend_url() {
   print_banner
-  printf "${WHITE} 💻 Digite o domínio:${GRAY_LIGHT}"
-  printf "\n\n"
-  read -p "> " frontend_url
   frontend_url = "web." + domain
 }
 
