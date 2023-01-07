@@ -6,15 +6,15 @@
 
 get_frontend_url() {
   print_banner
-  frontend_url = "web." + domain
+  frontend_url = "web.${domain}" 
 }
 
 get_backend_url() {
-  backend_url =  "api." + domain
+  backend_url =  "api.${domain}"
 }
 
 get_admin_frontend_url() {
-   admin_frontend_url =  "admin." + domain
+   admin_frontend_url =  "admin.${domain}"
 }
 
 
