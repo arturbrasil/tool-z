@@ -1,20 +1,18 @@
 #!/bin/bash
  print_banner
- printf "${WHITE} 💻 Digite o domínio:${GRAY_LIGHT}"
- printf "\n\n"
- read -p "> " domain
+ domain="monflix.com.br"
 
 get_frontend_url() {
   print_banner
-  frontend_url = "web.${domain}" 
+  frontend_url="web.${domain}" 
 }
 
 get_backend_url() {
-  backend_url =  "api.${domain}"
+  backend_url="api.${domain}"
 }
 
 get_admin_frontend_url() {
-   admin_frontend_url =  "admin.${domain}"
+  admin_frontend_url="admin.${domain}"
 }
 
 
